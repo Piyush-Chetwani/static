@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Carousel</title>
+		<link rel="stylesheet" type="text/css" href="base.css" />
+		<link rel="stylesheet" type="text/css" href="minn.css" />
+		<link rel="stylesheet" type="text/css" href="slider.css" />
+		<link rel="stylesheet" type="text/css" href="animate.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+            <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+		<section>
+		
+		<section class="demo-1">
+			<div class="content" data-aos="flip-left" data-aos-duration="1500">
+				<div class="pieces-slider">
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="1.jpg" height="800px" width="530px" alt="">
+						<h2 class="pieces-slider__text">Crypto Currency</h2>
+						<br>
+					</div>
+
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="2.jpg" height="800px" width="530px" alt="">
+						<h2 class="pieces-slider__text">Bitcoin</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="3.jpg" height="800px" width="530px" alt="">
+						<h2 class="pieces-slider__text">crypto</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="4.jpg" height="800px" width="530px" alt="">
+						<h2 class="pieces-slider__text">Dollars</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="5.jpg" height="800px" width="530px" alt="">
+						<h2 class="pieces-slider__text">Pounds</h2>
+					</div>
+					<canvas class="pieces-slider__canvas"></canvas>
+					<button class="pieces-slider__button pieces-slider__button--prev">prev</button>
+					<button class="pieces-slider__button pieces-slider__button--next">next</button>
+				</div>
+			</div>
+		</section>
+		<section> <center>
+			<div data-aos="fade-up-right" data-aos-duration="15000" class="vid">
+			<video width="70%" controls>
+				<source src="videoplayback.mp4" type="video/mp4">
+			</video>
+		</div>
+           </center> </section>
+           <section>
+		 <center>
+          <div class="loginbox" data-aos="flip-left" data-aos-duration="15000">
+		<div class="dropdown">
+		<img src="6.jpg" id ="login" width="204" height="200">
+		<div class="dropdown-content">  
+  </div>
+</div>
+<br>
+		<h1>Login Here</h1>
+		<form>
+	
+	<input type="text"name="" placeholder="Full Name*" id="user" required>
+	<br>
+	<input type="email" name="" placeholder="Email ID*" id="user" required>
+	<br>
+	<input type="text" name="" placeholder="Contact Number">
+    <br>
+	<button type="button" class="btn btn-danger">Request Beta Access</button>
+	
+</form>
+</div> </center>
+		 </section>
+
+
+<!--<script>
+	$(function() {
+		var $window = $(window), win_height_padded = $window.height() * 1.1, isTouch = Modernizr.touch;
+		if(isTouch) {
+			$('.revealOnScroll').addClass('animated');
+		}
+		$window.on('scroll', revealOnScroll);
+		function revealOnScroll() {
+			var scrolled = $window.scrollTop(), win_height_padded = $window.height() *1.1;
+			$('.revealOnScroll:not(.animated)').each(function() {
+				var $this = $(this), offsetTop = $this.offset().top;
+				if(scrolled+win_height_padded > offsetTop) {
+					if($this.data('timeout')) {
+						window.setTimeout(function() {
+							$this.addClass('animated'+ $this.data('animation'));
+						}, parseInt($this.data('timeout'),10));
+					} else {
+						$this.addClass('animated'+ $this.data('animation'));
+					}
+				}
+			});
+			$('.revealOnScroll.animated').each(function (index) {
+				var $this = $(this), offsetTop = $this.offset().top;
+				if(scrolled + win_height_padded < offsetTop) {
+					$(this).removeClass('animated fadeInUp flipInX lightSpeedIn');
+				}
+			});
+		}
+		revealOnScroll();
+	}); -->
+
+
+<!--script>
+$(function() {
+
+  var $window           = $(window),
+      win_height_padded = $window.height() * 1.1,
+      isTouch           = Modernizr.touch;
+
+  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+  $window.on('scroll', revealOnScroll);
+
+  function revealOnScroll() {
+    var scrolled = $window.scrollTop(),
+        win_height_padded = $window.height() * 1.1;
+
+    // Showed...
+    $(".revealOnScroll:not(.animated)").each(function () {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('timeout')) {
+          window.setTimeout(function(){
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout'),10));
+        } else {
+          $this.addClass('animated ' + $this.data('animation'));
+        }
+      }
+    });
+    // Hidden...
+   $(".revealOnScroll.animated").each(function (index) {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+      if (scrolled + win_height_padded < offsetTop) {
+        $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+      }
+    });
+  }
+
+  revealOnScroll();
+});
+</script> -->
+
+
+
+
+<script>AOS.init()</script>
+
+
+
+		<script src='anime.min.js'></script>
+		<script src='pieces.min.js'></script>
+		<script src='demo.js'></script>
+	</body>
+</html>

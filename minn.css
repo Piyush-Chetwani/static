@@ -1,0 +1,61 @@
+ body{
+	font-family:algerian;
+}
+
+.loginbox{
+	width:350px;
+    color:#fff;
+    top:10%;
+    left:38%;
+    box-sizing:border-box;
+    padding:30px 30px 70px;/*top,right,bottom,left */
+    border-radius:80px;
+    background:rgba(0,0,0,.8);
+    box-shadow:0 15px 25px rgba(0,0,0,.5);
+    margin: 15% auto 10%;
+
+}
+#login{
+width:200px;
+height:200px;
+border-radius:10%;
+
+
+}
+.loginbox h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:30px;
+}
+.loginbox p{
+	margin:0;
+	padding:0;
+	font-weight:lighter;
+}
+.loginbox input{
+	width:90%;
+	margin-bottom:20px;
+}
+.loginbox input[type="text"],.loginbox input[type="email"]
+{
+	border:0;
+	border-bottom:1px dashed/*(solid)#fff*/;
+	background:transparent;
+	outline:none;
+	border:2px solid #3498db;
+	height:40px;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+	display:block;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+.loginbox input[type="text"]:hover,.loginbox input[type="email"]:hover
+{   cursor:pointer;
+	width:280px;
+	border-color:#2ecc71;
+} 
